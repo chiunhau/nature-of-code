@@ -32,7 +32,7 @@ function Particle(x, y, m) {
     this.slowDown();
     this.pos.add(this.vel);
     this.acc.set(0, 0);
-    // this.edges();
+    this.edges();
   }
   this.slowDown = function() {
     this.vel.mult(0.995);
