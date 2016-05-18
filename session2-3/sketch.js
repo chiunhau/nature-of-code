@@ -9,6 +9,9 @@ function setup() {
 function mouseDragged() {
   particles.push(new Particle(mouseX, mouseY, random(1,5)));
 }
+function mousePressed() {
+  particles.push(new Particle(mouseX, mouseY, random(1,5)));
+}
 function draw() {
   blendMode(NORMAL);
   background(255);
