@@ -39,7 +39,7 @@ function Particle(x, y, m) {
   }
   this.display = function() {
     noStroke();
-    blendMode(MULTIPLY);
+    blendMode(HARD_LIGHT);
     fill(this.fillColor);
     ellipse(this.pos.x, this.pos.y, this.mass * 10, this.mass * 10);
   }
